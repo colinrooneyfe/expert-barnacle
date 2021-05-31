@@ -29,6 +29,7 @@ public class DemoApplication {
 
     @RequestMapping("/")
     public String home() {
+
         makeEntityDemo();
 
         return "Hello Docker World. Test Data created!!";
@@ -42,7 +43,7 @@ public class DemoApplication {
 
     @RequestMapping("/vend")
     public String smartvend() {
-        return smartvendRepo.getOne(2L).toString();
+        return smartvendRepo.findById(2L).toString();
     }
 
 
