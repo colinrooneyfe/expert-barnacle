@@ -37,12 +37,12 @@ public class DemoApplication {
 
     @RequestMapping("/customer")
     public String customer() {
-        return "Customer=" + customerRepo.findById(1L).toString();
+        return customerRepo.findById(1L).toString();
     }
 
     @RequestMapping("/vend")
     public String smartvend() {
-        return "SmartVend=" + smartvendRepo.getOne(2L).toString();
+        return smartvendRepo.getOne(2L).toString();
     }
 
 
