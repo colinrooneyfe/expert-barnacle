@@ -46,7 +46,7 @@ public class DemoApplication {
         return smartvendRepo.findById(2L).toString();
     }
 
-
+    // minor change to test github user used
     private void makeEntityDemo() {
         Customer depuy = new Customer();
         depuy.setAccountNo("J0125");
