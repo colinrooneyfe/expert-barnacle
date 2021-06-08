@@ -13,7 +13,7 @@ public class Smartvend {
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Long id;
 
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToOne(fetch = FetchType.EAGER)
     private Customer customer;
 
     private String name;
